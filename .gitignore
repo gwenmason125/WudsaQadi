@@ -1,3 +1,12 @@
+# Word Dictionaries
+./data/dictionaries/*
+!data/dictionaries/.gitkeep
+
+# CMake
+/build/
+/CMakeFiles/
+/Makefile
+
 # Prerequisites
 *.d
 
