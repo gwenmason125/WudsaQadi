@@ -6,6 +6,7 @@
 /build/
 /CMakeFiles/
 /Makefile
+/bin
 
 # Prerequisites
 *.d
