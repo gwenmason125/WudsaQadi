@@ -1,3 +1,6 @@
+# Editor
+./.vscode
+
 # Word Dictionaries
 ./data/dictionaries/*
 !data/dictionaries/.gitkeep
