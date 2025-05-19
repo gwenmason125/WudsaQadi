@@ -4,6 +4,13 @@ project(wudsaqadi VERSION 1.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Optional: Custom debug/release flags
+set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+
+# Helpful build type message
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+
 # Add include directory
 include_directories(include)
 

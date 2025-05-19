@@ -1,15 +1,23 @@
 # Editor
-./.vscode
+/.vscode
 
 # Word Dictionaries
-./data/dictionaries/*
-!data/dictionaries/.gitkeep
+/resources/dictionaries/*
+!resources/dictionaries/.gitkeep
+
+# Output
+/output/*
+!output/resources/.gitkeep
 
 # CMake
-/build/
+/build-debug/
+/build-release/
 /CMakeFiles/
 /Makefile
-/bin
+CMakeCache.txt
+CTestTestfile.cmake
+cmake_install.cmake
+
 
 # Prerequisites
 *.d
