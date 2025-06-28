@@ -36,7 +36,7 @@ private:
     ) const;
 
 public:
-    PillarGroupTrie(size_t length = 0, size_t width = 0);
+    PillarGroupTrie();
     void insert(const std::vector<std::string> &words);
     void insert(const std::array<hash_t, PILLAR_GROUP_LENGTH> hashes);
     void writeToFile(std::ofstream &fileOut) const;
@@ -53,7 +53,7 @@ struct PillarGroupSearch {
 void findAllPillarGroups(
     std::array<PillarGroupTrie, PILLAR_GROUP_MAX_WIDTH> &pillarGroupTries,
     const std::array<std::unordered_set<hash_t>, PILLAR_GROUP_MAX_WIDTH> &widthwiseWords,
-    bool verbose = true
+    int verboseDepth
 );
 
 std::vector<std::string> unhashPillarGroup(const std::array<hash_t, PILLAR_GROUP_LENGTH> &hashes);
